@@ -23,10 +23,32 @@ html,body{
   background-color: orange;
   height: 10vh;
 }
-/* 메인 */
+/* 메인콘텐츠 */
 .main{
   background-color: blue;
   height: 60vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.group{
+
+}
+
+.group1{
+  background-color: pink;
+  width: 250px;
+}
+
+.group2{
+  background-color: lime;
+  width: 380px;
+}
+.group3{
+  background-color: salmon;
+  width: 190px;
 }
 /* 슬로건 */
 .slogan{
