@@ -72,3 +72,6 @@ git log --oneline
 
 ## CLI 명령
 - cd webcafeHTML5
+
+## target="_blank" 쓸 때 noopener noreferrer 사용(보안이슈)
+- rel="noopener norefferer"

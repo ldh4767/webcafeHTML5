@@ -2,7 +2,7 @@
 @import url(./fontello.css);
 
 /* 기본 글꼴 - 웹폰트 */
-html,body{
+html, body{
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -21,24 +21,23 @@ body{
 
 /* 숨김 콘텐츠 */
 .a11y-hidden, legend{
-  background-color: red;
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   margin: -1px;
   clip: rect(1px, 1px, 1px, 1px);
-  clip-path: polygon(0 0,0 0,0 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
 
 /* 링크 스타일 */
 a{
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 /* 박스 사이징 재정의 */
-*,*::before, *::after{
+*, *::before, *::after{
   box-sizing: border-box;
 }
 
@@ -66,19 +65,17 @@ a{
 }
 
 /* 레이아웃 */
-.header,.visual,.main,.slogan,.footer-inner{
+.header, .visual, .main, .slogan, .footer-inner{
   width: 940px;
   margin: 0 auto;
 }
 /* 헤더 */
 .header{
-  background-color: #fff;
   position: relative;
   padding: 0 30px;
+  background-color: #fff;
   border-radius: 0 0 15px 15px;
-  /* height: 10vh; */
 }
-
 /* 로고 */
 .logo{
   margin: 0;
@@ -87,13 +84,10 @@ a{
   top: 43px;
   left: 60px;
 }
-
 .logo a{
   display: block;
 }
-
 .logo img{
-  /* background-color: blueviolet; */
   vertical-align: top;
 }
 
@@ -102,7 +96,6 @@ a{
   margin: 0;
   padding-left: 0;
   list-style-type: none;
-  /* font-size: 0; */
   text-align: right;
   transform: translateX(10px);
 }
@@ -111,8 +104,6 @@ a{
   display: inline-block;
   padding: 4px 0;
   text-transform: uppercase;
-  /* background-color: tomato; */
-  /* font-size: 1rem; */
 }
 
 .member-service a{
@@ -131,14 +122,14 @@ a{
   margin: 0;
   padding-left: 230px;
   list-style: none;
-  background: #dd422a linear-gradient(to bottom, #e0a12c 0%,#ea392c 30%,#207cca 78%,#e0652c 100%);
+  background: #dd422a linear-gradient(to bottom, #db6c2b 1%,#dd422a 30%,#dd422a 70%,#db6c2b 100%);
   border-radius: 0 0 5px 5px;
 }
 
 .menu-item{
-  float: left;
-  border-left: 2px solid #fff; 
   position: relative;
+  float: left;
+  border-left: 2px solid #fff;
 }
 
 .is-active .menu-button{
@@ -154,7 +145,7 @@ a{
 
 .menu-button{
   cursor: pointer;
-  background-color: transparent;
+  background: transparent;
   border: 0;
   padding: 0 23px;
   line-height: 45px;
@@ -176,13 +167,12 @@ a{
   right: 0;
 }
 
-
 .sub-menu{
   margin: 0;
   padding-left: 0;
   list-style: none;
-  position: absolute;
   display: none;
+  position: absolute;
   top: 47px;
   white-space: nowrap;
 }
@@ -190,12 +180,10 @@ a{
 .sub-menu li{
   display: inline-block;
 }
-
 .sub-menu a{
   display: inline-block;
   padding: 6px 10px;
 }
-
 .sub-menu a::before{
   content: "\f192";
   font-family: 'fontello';
@@ -203,30 +191,25 @@ a{
   width: 1em;
   margin-right: .2em;
 }
-
 .sub-menu a:focus{
   outline: none;
 }
-
 .sub-menu a:hover, .sub-menu a:focus{
   color: #f00;
 }
-
 .sub-menu a:hover::before, .sub-menu a:focus::before{
   content: "\e800";
 }
-
 /* 비주얼 */
-
 @keyframes moveEffect{
   0%{
     font-size: 12px;
-    color: rgba(0, 0, 0, 0);
+    color: rgba(0,0,0,0);
     transform: translate(0,0);
   }
   100%{
     font-size: 24px;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0,0,0,1);
     transform: translate(400px,75px);
   }
 }
@@ -252,11 +235,12 @@ a{
 }
 
 .visual::before{
-  background: url(./images/ani_flower_01.png) no-repeat 0 -10px,
+  background: url(./images/ani_flower_01.png) no-repeat 0 -10px, 
   url(./images/ani_flower_02.png) no-repeat 600px 0;
 }
+
 .visual::after{
-  background: url(./images/ani_flower_03.png) no-repeat 300px 0,
+  background: url(./images/ani_flower_03.png) no-repeat 300px 0, 
   url(./images/ani_flower_04.png) no-repeat 800px 10px;
   animation-delay: 1000ms;
 }
@@ -270,18 +254,18 @@ a{
   animation-fill-mode: forwards;
   display: inline-block;
 }
+
 /* 메인콘텐츠 */
-/* flex를 활용한 메인콘텐츠 배치 */
-/*.main{
-  background-color: blue;
+/* flex를 할용한 메인콘텐츠 배치 */
+/* .main{
   height: 60vh;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
-  padding: 30px;
-}*/
+  justify-content: space-around;
+  padding: 30px 15px;
+} */
 
-/* float을 활용한 메인콘텐츠 배치 */
+/* float을 할용한 메인콘텐츠 배치 */
 .main{
   display: flow-root;
   min-height: 450px;
@@ -292,7 +276,6 @@ a{
 
 /* .clearfix::after{
   content: "";
-  background-color: red; 
   clear: both;
   display: block;
 } */
@@ -309,8 +292,113 @@ a{
 .group2{
   width: 380px;
 }
+
 .group3{
   width: 190px;
+}
+
+/* 로그인 */
+.login{
+  background: radial-gradient(circle at right top, #db6c2b, #dd422a);
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 #ccc;
+  padding: 10px;
+}
+
+.login-title{
+  font-size: 1.5rem;
+  color: #ff0;
+  margin: 0 0 10px 10px;
+}
+
+.login-form{
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #aaa;
+}
+
+.login-form div{
+  margin-bottom: 6px;
+}
+
+.login-form label{
+  display: inline-block;
+  width: 4em;
+}
+
+.login-form input{
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  width: 90px;
+  height: 22px;
+  padding: 1px 1px 1px 8px;
+}
+
+.button-login{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e8852e;
+  background-color: #ed552f;
+  color: #fff;
+  padding: 0;
+  font-size: 1.2rem;
+  border-radius: 3px;
+}
+
+.sign{
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 4px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.sign a{
+  padding: 6px 0;
+  font-size: 1.3rem;
+}
+
+.sign .icon-right-open::before{
+  color: #dd422a;
+}
+
+/* 유효성 검사 배너 */
+.validation{
+  margin-top: 25px;
+}
+
+.validation-list{
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.validation-list li{
+  margin-top: 10px;
+}
+
+.validation-list a{
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  margin-top: 15px;
+  padding: 8px 20px 8px 45px;
+  background: url(./images/validation_icon.png)no-repeat 20px 50%, #ccc linear-gradient(#ccc,#eee);
+}
+
+.validation-list a:hover, .validation-list a:focus{
+  color: #f00;
 }
 
 /* 슬로건 */
@@ -321,4 +409,3 @@ a{
 .footer{
   height: 10vh;
 }
-
