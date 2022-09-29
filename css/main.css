@@ -401,6 +401,67 @@ a{
   color: #f00;
 }
 
+/* 웹 관련 용어 */
+.term{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc linear-gradient(#ccc,#eee);
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+
+.term-title{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.term-list{
+  margin: 10px 0 0 0;
+}
+
+.term-list-inner{
+  display: flow-root;
+  margin: 10px 0 0 0;
+}
+
+.term-list dd{
+  margin-left: 0;
+}
+
+.term-list-subject{
+  color: #296897;
+  font-weight: 500;
+  float: right;
+  width: 140px;
+}
+
+.reverse .term-list-thumbnail{
+  float: right;
+}
+
+.reverse .term-list-brief{
+  float: left;
+}
+
+.reverse .term-list-subject{
+  float: left;
+}
+
+.term-list-thumbnail{
+  background-color: salmon;
+}
+
+.term-list-thumbnail img{
+  vertical-align: top;
+  float: left;
+}
+
+.term-list-brief{
+  float: right;
+  width: 140px;
+  margin-top: 5px;
+}
+
 /* 슬로건 */
 .slogan{
   height: 10vh;
